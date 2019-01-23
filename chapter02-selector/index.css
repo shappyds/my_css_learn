@@ -1,0 +1,51 @@
+/* attribute selector */
+h1[class="attrTest"] {
+    color: red;
+    font-size: 18px;
+}
+
+/* multi attribute selector */
+h1[class="attrTest"][title] {
+    color: blueviolet;
+}
+
+/* brother element selector */
+#brother ol + ul {
+    color: aqua;
+}
+
+#brother ul > li + li {
+    color: red;
+}
+
+/* 伪类 */
+a:link {
+    color: purple;
+}
+
+a:visited {
+    color: silver;
+    text-decoration: line-through; /*not working, browser manufacturers 
+        basically eliminated alternate styling for :visited except for a handful of properties (e.g. 'color', 'background-color')*/
+    font-style: italic;
+    font-weight: bold;
+}
+
+#fChild p:first-child {
+    font-weight: bold;
+}
+
+#fChild li:first-child {
+    text-transform: uppercase;
+}
+
+/* 伪元素 */
+#pseElement div:before {
+    content: "{{";
+    color: silver;
+}
+
+#pseElement div:after {
+    content: "}}";
+    color: silver;
+}

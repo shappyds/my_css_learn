@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>Selector Demo</title>
+</head>
+<body>
+    <h1 class="attr">Hi</h1>
+    <h1 class="attrTest">Hello</h1>
+    <h1 class="attrTest" title="Multi">Multi Attr Selector</h1>
+    <!-- 相邻兄弟元素,必须要紧接在另一个元素之后的元素，并且两者有相同的父元素 -->
+    <div id='brother'>
+        <ol>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+        </ol>
+        This is some text that is part of 'div'
+        <ul>
+            <li>A list item</li>
+            <li>Another list item</li>
+            <li>Yet another item</li>
+        </ul>
+    </div>
+    <!-- 伪类(pseudo class) -->
+    <a href="https://www.google.com">Google</a>
+    <br />
+    <br />
+    <div> 伪类demo：</div>
+    <div id='fChild'>
+        <p>This are the necessary steps:</p>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <p>Do<em>not</em>push the brake at the same time as the acclerator</p>
+    </div>
+    <div>伪元素demo：</div>
+    <div id="pseElement">
+        <div>pesudo element</div>
+    </div>
+</body>
+</html>
