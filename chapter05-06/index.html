@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>文本</title>
+</head>
+<body>
+    <div class='h-left'>
+        近期对项目进行升级，支持webpack4和开启tree shaking功能碰到最大的一个坑就是esm（ES Module)和cjs(CommonJS)的互操作性。下面对其详细解释。 
+    </div>
+    <div class="h-center">
+        直到最近浏览器才对es module进行了支持，之前大家虽然写的都是es module,但是都是经过webpack或者babel转换成cjs。这就导致我们以为只要编译正常，写的代码就没有任何问题。
+    </div>
+    <div class="h-right">
+        实际上并不是如此，webpack和babel也可能犯错，实际上babel5就错误的支持了某种模块语法，导致你编写的代码（使用了错误的语法）虽然可能存在问题，但仍然可能正常工作，但一旦babel/webpack修复了该问题，就导致你的代码就会出错了。
+    </div>
+    <h4>line-height测试：</h4>
+    <p>近期对项目进行升级，支持webpack4和开启tree shaking功能碰到最大的一个坑就是esm（ES Module)和cjs(CommonJS)的互操作性。下面对其详细解释。</p>
+    <p class="cl1">近期对项目进行升级，支持webpack4和开启tree shaking功能碰到最大的一个坑就是esm（ES Module)和cjs(CommonJS)的互操作性。下面对其详细解释。 </p>
+    <p class="cl2">近期对项目进行升级，支持webpack4和开启tree shaking功能碰到最大的一个坑就是esm（ES Module)和cjs(CommonJS)的互操作性。下面对其详细解释。 </p>
+    <h4>vertical-align测试：</h4>
+    <p>既然有插件支持了，我们为什么不能一直用错误用法1呢？<span class="raise">这比正确用法的写法简洁很多。</span>原因就是如果要使用插件，就必须要使用babel将esm转换为cjs，这导致后面的打包工具难以对代码进行静态分析了。<span class="lower">没有了静态分析</span>，就没法做tree shaking了。更主要的原因一切非标准的写法，不同工具难以保证对齐支持方式一致，这会导致各种交互性问题。</p>
+    <p>既然有插件支持了，我们为什么不能一直用错误用法1呢？<span class="sub">这比正确用法的写法简洁很多。</span>原因就是如果要使用插件，就必须要使用babel将esm转换为cjs，这导致后面的打包工具难以对代码进行静态分析了。<span class="sup">没有了静态分析</span>，就没法做tree shaking了。更主要的原因一切非标准的写法，不同工具难以保证对齐支持方式一致，这会导致各种交互性问题。</p>
+</body>
+</html>
