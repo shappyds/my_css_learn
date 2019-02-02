@@ -1,0 +1,77 @@
+#box_test {
+    width: 400px;
+}
+
+#box_test p {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#box_test .autoChange {
+    width: 100px;
+    border: 0;
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#box_test .autoChange1 {
+    width: 100px;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+.h_test {
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid black;
+}
+
+.h_test p {
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+
+.h_auto1 {
+    height: auto;
+    border:1px solid black;
+    background: silver;
+}
+
+.h_auto1 p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.inline_test {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.inline_test strong {
+    font-size: 36px;
+    vertical-align: 4px;
+}
+
+.inline_test span {
+    vertical-align: top;
+}
+
+.inline_test_1 {
+    font-size: 18px;
+    line-height: 1em;
+}
+
+.inline_test_1 strong {
+    font-size: 36px;
+    line-height: 1em;
+}
+
+.inline_test_2 {
+    border: 1px solid black;
+    margin: 0;
+}
