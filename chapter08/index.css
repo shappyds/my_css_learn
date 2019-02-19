@@ -1,0 +1,17 @@
+.neg-margin {
+    border: 1px dotted gray;
+    margin: 1em;
+}
+
+.neg-margin p {
+    margin: 1em;
+    border: 1px dashed silver;
+}
+
+p.one {
+    margin: 0 -1em;
+}
+
+p.two {
+    margin: -1em 1em;
+}
