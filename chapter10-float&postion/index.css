@@ -1,0 +1,65 @@
+div.one {
+    background-color: aqua;
+    float: left;
+    width: 100%;
+}
+
+
+.flo-img {
+    float: left;
+    margin: 5px;
+}
+
+.sideline {
+    float: left;
+    margin: 10px -15px 10px 10px;
+}
+
+p.box {
+    border: 1px solid gray;
+    padding: 0.5em;
+}
+
+p.box strong {
+    border: 3px double black;
+    background: silver;
+    padding: 2px;
+}
+
+#jump-up {
+    background: silver;
+    clear: both;
+}
+
+.outer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.inner {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    /* margin: 10px; */
+    background-color: saddlebrown;
+}
+
+.container {
+    position: relative;
+}
+
+b {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 8em;
+    border: 1px solid red;
+}
